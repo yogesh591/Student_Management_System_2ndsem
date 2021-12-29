@@ -200,19 +200,19 @@ class SMS:
 
     def __init__(self, root):
         # Labels
-        self.lblID = Label(root, text="ID", font=("Times New Roman", 8), bg="Blue", fg="White")
+        self.lblID = Label(root, text="ID", font=("Times New Roman", 8), bg="Dark Slate grey", fg="White")
         self.lblID.place(x=35, y=60)
-        self.lblFname = Label(root, text="First Name", font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.lblFname = Label(root, text="First Name", font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.lblFname.place(x=35, y=100)
-        self.lblLname = Label(root, text="Last Name", font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.lblLname = Label(root, text="Last Name", font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.lblLname.place(x=180, y=100)
-        self.lblAge = Label(root, text="Age", font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.lblAge = Label(root, text="Age", font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.lblAge.place(x=35, y=140)
-        self.lblAddress = Label(root, text="Address", font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.lblAddress = Label(root, text="Address", font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.lblAddress.place(x=183, y=140)
-        self.lblDegree = Label(root, text="Role", font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.lblDegree = Label(root, text="Role", font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.lblDegree.place(x=183, y=180)
-        self.lblContact=Label(root, text="Contact",font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.lblContact=Label(root, text="Contact",font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.lblContact.place(x=35,y=180)
         # Entries
         self.entryID = Entry(root)
@@ -282,12 +282,12 @@ class SMS:
         self.student_table.pack(fill=BOTH, expand=True)
 
         # Making search and sort button
-        self.sasbylbl = Label(root, text="Search or sort by", font=("Times New Roman", 10), bg="Blue",
+        self.sasbylbl = Label(root, text="Search or sort by", font=("Times New Roman", 10), bg="Dark Slate grey",
                               fg="White")
         self.sasbylbl.place(x=380, y=100)
         self.searchbyCB = ttk.Combobox(root, values=["ID", "FirstName", "LastName", "Age", "Address", "Role","Contact"])
         self.searchbyCB.place(x=380, y=120)
-        self.searchlbl = Label(root, text="Search", font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.searchlbl = Label(root, text="Search", font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.entrysearch = Entry(root)
         self.searchlbl.place(x=380, y=150)
         self.entrysearch.place(x=380, y=170)
@@ -298,7 +298,7 @@ class SMS:
         self.sortbtn = ttk.Button(root, text="Sort", command=self.sorting)
         self.sortbtn.place(x=460, y=250)
 
-        self.sortordlbl=Label(root,text="Order", font=("Times New Roman", 10), bg="Blue", fg="White")
+        self.sortordlbl=Label(root,text="Order", font=("Times New Roman", 10), bg="Dark Slate grey", fg="White")
         self.sortordlbl.place(x=530,y=100)
         self.sortord=ttk.Combobox(root,values=["ASC","DSC"],width=5)
         self.sortord.place(x=530,y=120)
@@ -308,7 +308,7 @@ root.title("Student Management System")
 root.geometry("630x700")
 
 label_0 = Label(root, text="Student Management System", width=40, font=("Times New Roman", 25),
-                bg="Blue", fg="White").pack()
+                bg="Dark Slate grey", fg="White").pack()
 b = SMS(root)
-root.configure(background="Blue")
+root.configure(background="Dark Slate grey")
 root.mainloop()
